@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+	<h1>Login</h1>
+
+	<!-- Action - where the form send data to -->
+	<!-- Method - what HTTP method (get/post) -->
+	<!--  action="http://wikipedia.org" method="GET" -->
+	<!-- required makes it necessary to fill out the fields. Present validation -->
+
+	<div>
+		<form>
+			<!-- Nested label-->
+			<label>
+				Username:
+				<input type="text" placeholder="User name" required>
+			</label>
+
+			<label>
+				Email:
+				<input type="Email" placeholder="Email" required>
+			</label>
+
+			<!-- Connecting lable and input using for and id -->
+			<label for="Password">	Password: </label>
+			<input type="password" placeholder="password" id="Password" required> 
+
+
+			<button>Login</button>
+		</form>
+
+		<form>
+			<label for="man">	Man </label>
+			<input type="radio" id="man" name="man_woman" value="MAN">
+			
+			<label for="woman">	Woman </label>
+			<input type="radio" id="woman" name="man_woman" value="WOMAN">
+			
+			<select name="Country"> hej
+				<option value="Sweden">Sweden</option>
+				<option value="Germany">Germany</option>
+				<option value="Dutch">Dutch</option>
+				<option value="Danish">Danish</option>
+			</select>
+
+			<input type="checkbox" name="">
+			<button>Send data</button>
+		</form>
+
+
+		<textarea name="Paragraph" rows="30" cols="20"></textarea>>
+		<!--
+		<input type="color">
+		<input type="radio" name="hed">
+		<input type="Submit" placeholder="Submit">
+		-->
+	</div>
+
+</body>
+</html>
